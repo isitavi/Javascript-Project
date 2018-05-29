@@ -2,11 +2,7 @@
 let minNumber = 1,
     maxNumber = 10,
     tryCounter = 3,
-<<<<<<< HEAD
-    guessNo = randomNumGenerator(minNumber,maxNumber);
-=======
     guessNo = 2;
->>>>>>> 29051ca7622ed7c8f4df95e9e2b01375cfde6f16
 
 
 //UI elements
@@ -22,16 +18,7 @@ let game = document.querySelector('#game'),
 minNumUI.textContent = minNumber;
 maxNumUI.textContent = maxNumber;
 
-<<<<<<< HEAD
-//When Play again appears in the submit button then mousedown(click) and automatically reload the page
-game.addEventListener('mousedown',(evntObj) =>{
-    if(evntObj.target.className === 'play-again'){
-        window.location.reload();
-    }
-})
-=======
 
->>>>>>> 29051ca7622ed7c8f4df95e9e2b01375cfde6f16
 
 submit.addEventListener('click',() => {
     const convertToInt = parseInt(inputBox.value);
@@ -79,23 +66,7 @@ function isWin(win,msg){
     message.style.color = color;
     //Border color green after correct guessing
     inputBox.style.borderColor = color;
-<<<<<<< HEAD
-
-
-    //Play Again
-    submit.value = 'Play again';
-    submit.className +='play-again';
     
 
     setMsg(msg);
-}
-
-//Generate Random number for Guess Challange
-function randomNumGenerator(minNumber,maxNumber){
-    return Math.floor(Math.random() * (maxNumber - minNumber +1))+minNumber;
-=======
-    
-
-    setMsg(msg);
->>>>>>> 29051ca7622ed7c8f4df95e9e2b01375cfde6f16
 }
